@@ -1,13 +1,11 @@
-# Soracom Homebrew Tap (Private)
+# Soracom Homebrew Tap
 
-**Private Homebrew tap for Soracom developer tools.**
+**Public Homebrew tap for SoraQL.**
 
 ## 🍺 Install SoraQL
 
-> **Note**: This is a private tap. You need GitHub authentication to access it.
-
 ```bash
-# Add the Soracom private tap (requires GitHub authentication)
+# Add the Soracom tap
 brew tap soracom/soraql
 
 # Install soraql
@@ -24,12 +22,6 @@ soraql --help
 brew update && brew upgrade soraql
 ```
 
-## 🔐 Authentication Requirements
-
-Since this is a private repository, users need:
-- GitHub CLI authenticated: `gh auth login`
-- OR SSH keys configured for GitHub access
-- OR GitHub Personal Access Token with repo access
 
 ## Available Tools
 
@@ -67,20 +59,11 @@ When releasing a new version of soraql:
    brew update && brew upgrade soraql
    ```
 
-### Making the Tap Public
-
-When ready to make this tap public:
-
-1. Go to repository settings: https://github.com/soracom/homebrew-soraql/settings
-2. Scroll to "Danger Zone"
-3. Click "Change repository visibility"
-4. Change from Private to Public
-5. Update this README to remove authentication notes
 
 ## 📁 Repository Structure
 
 ```
-homebrew-soraql/ (PRIVATE)
+homebrew-soraql/
 ├── README.md
 └── Formula/
     └── soraql.rb
@@ -110,4 +93,4 @@ which soraql  # Should show /opt/homebrew/bin/soraql or /usr/local/bin/soraql
 
 ---
 
-**Note**: This is a private repository for internal testing. The tap functionality is identical to public taps, but requires GitHub authentication for access.
+**soraql** - Command-line SQL client for Soracom data warehouse API
